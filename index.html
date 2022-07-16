@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+  <div id="quizPage">
+    <div class="nav">
+      <button id="viewScores">View Highscores</button>
+      <p>Timer:<span id="time">0</span></p>
+    </div>
+    <div class="intro">
+      <h1>Cris's Quiz</h1>
+      <p>Try to complete as many questions as possible! <br>
+      Keep in mind that incorrect answers remove 10 seconds from the remaining time</p>
+    </div>
+    <button id="begin">Begin</button>
+
+    <div id="quizForm">
+      <h2 id="question">Question</h2>
+      <div class="choiceSpace">
+        <button id="choice1">Answer</button>
+        <button id="choice2">Answer</button>
+        <button id="choice3">Answer</button>
+        <button id="choice4">Answer</button>
+      </div>
+    </div>
+
+    <div class="endScreen">
+      <h3>Quiz is Over!</h3>
+      <p>Your final score is: <span id="score"></span></p>
+      <div><input type="text"><button id="submit">Submit</button></div>
+    </div>
+
+  </div>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
